@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="comingup">We\'ve scanned your accounts and can\'t find any payments coming up.</string>
+</resources>

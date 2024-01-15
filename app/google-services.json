@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "912417708057",
+    "project_id": "belle-application",
+    "storage_bucket": "belle-application.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:912417708057:android:13cee769b884e3b717f288",
+        "android_client_info": {
+          "package_name": "com.example.belle_app1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBG890M6CMvLSyXjVksFmeMtcVQZRlEmHM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
