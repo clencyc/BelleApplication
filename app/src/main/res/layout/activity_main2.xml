@@ -4,23 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2"
+    tools:context=".MainActivity"
     android:id="@+id/layout">
-
-    <FrameLayout
-        android:id="@+id/container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/bottomnavigation"
-        android:layout_alignParentTop="true"
-        />
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomnavigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        app:menu="@menu/bottomnav_bar"/>
 
 
     <ScrollView
@@ -62,6 +47,19 @@
                         android:src="@drawable/fireworks"
                         android:layout_marginTop="15dp"
                         android:layout_marginLeft="280dp"
+                        />
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/period"
+                        android:layout_marginLeft="-5dp"
+                        />
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/period"
+                        android:layout_marginLeft="-5dp"
+                        android:layout_marginTop="15dp"
                         />
                 </androidx.cardview.widget.CardView>
 
@@ -551,8 +549,10 @@
                         app:srcCompat="@drawable/rightarrow" />
 
 
+
+
                 </androidx.cardview.widget.CardView>
-                
+
                 <androidx.cardview.widget.CardView
                     android:layout_width="350dp"
                     android:layout_height="60dp"
@@ -576,30 +576,71 @@
                         android:layout_marginTop="35dp"
                         android:text="And score $10 each"
                         android:textSize="15sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/user"
+                        android:layout_marginLeft="200dp"
+                        android:layout_marginTop="5dp"
+                        />
 
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/vuvuzela"
+                        android:layout_marginLeft="225dp"
+                        android:layout_marginTop="5dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/person"
+                        android:layout_marginLeft="175dp"
+                        android:layout_marginTop="5dp"
                         />
 
                 </androidx.cardview.widget.CardView>
 
-                <Button
-                    android:layout_width="100dp"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="100dp"
-                    android:background="@color/black"
-                    android:layout_marginLeft="140dp"
-                    />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="70dp"
+                    app:cardBackgroundColor="#E8E8E8"
+                    >
 
-                <com.google.android.material.bottomnavigation.BottomNavigationView
-                    android:layout_width="match_parent"
-                    android:layout_height="70dp"
-                    android:background="@color/white"
-                    android:elevation="0dp"
-                    app:itemPaddingBottom="10dp"
-                    app:itemPaddingTop="10dp"
-                    app:itemRippleColor="@color/purple_200"
-                    app:labelVisibilityMode="unlabeled"
-                    app:menu="@menu/bottomnav_bar"
-                    />
+
+                    <Button
+                        android:id="@+id/btn001"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/btnround"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginBottom="80dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Edit"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="30dp"
+                        />
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
             </LinearLayout>
 
         </LinearLayout>
@@ -610,5 +651,113 @@
     </ScrollView>
 
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        android:elevation="0dp"
+        app:itemPaddingBottom="10dp"
+        android:layout_alignParentBottom="true"
+        app:itemPaddingTop="10dp"
+        app:itemRippleColor="@color/purple_200"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottomnav_bar"
+        >
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="40dp"
+            android:text="Home"
+            android:textSize="15sp"
+            android:textColor="@color/purple_500"
+            android:layout_marginLeft="25dp"
+
+            />
+        <TextView
+            android:layout_width="64dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="40dp"
+            android:text="Accounts"
+            android:textSize="15sp"
+            android:textColor="@color/purple_500"
+            android:layout_marginLeft="99dp"
+
+            />
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="40dp"
+            android:text="Pay"
+            android:textSize="15sp"
+            android:textColor="@color/purple_500"
+            android:layout_marginLeft="199dp"
+
+            />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="40dp"
+            android:text="Cards"
+            android:textSize="15sp"
+            android:textColor="@color/purple_500"
+            android:layout_marginLeft="270dp"
+
+            />
+
+        <TextView
+            android:layout_width="55dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="40dp"
+            android:text="Settings"
+            android:textSize="15sp"
+            android:textColor="@color/purple_500"
+            android:layout_marginLeft="350dp"
+
+            />
+        <ImageView
+            android:id="@+id/homesection"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/colon"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <ImageView
+            android:id="@+id/accountsection"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/equal"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="110dp"
+            />
+        <ImageView
+            android:id="@+id/coinsection"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/coin"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="199dp"
+            />
+        <ImageView
+            android:id="@+id/cardsection"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:src="@drawable/card"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="270dp"
+            />
+
+        <ImageView
+            android:id="@+id/usersection"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:src="@drawable/users"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="350dp"
+            />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 </RelativeLayout>

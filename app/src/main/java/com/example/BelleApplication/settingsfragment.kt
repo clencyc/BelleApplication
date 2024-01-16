@@ -1,4 +1,4 @@
-package com.example.belle_app1
+package com.example.BelleApplication
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -13,10 +13,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [cart_home.newInstance] factory method to
+ * Use the [settingsfragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class cart_home : Fragment() {
+class settingsfragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -34,7 +34,7 @@ class cart_home : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cart_home, container, false)
+        return inflater.inflate(R.layout.fragment_settingsfragment, container, false)
     }
 
     companion object {
@@ -44,12 +44,12 @@ class cart_home : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment cart_home.
+         * @return A new instance of fragment settingsfragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            cart_home().apply {
+            settingsfragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
