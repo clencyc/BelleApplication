@@ -4,11 +4,11 @@ android:shape="rectangle">
 
 <!-- Set the border color and width -->
     <corners
-        android:radius="100dp"/>
+        android:radius="140dp"/>
 <stroke
     android:width="3dp"
-    android:color="#3BD5CF" /> <!-- Replace #FF0000 with your desired color -->
+    android:color="#FFFFFF" /> <!-- Replace #FF0000 with your desired color -->
 
 <!-- Set the background color of the button -->
-<solid android:color="#FFFFFF" /> <!-- Replace #FFFFFF with your desired color -->
+<solid android:color="#0F16B0" /> <!-- Replace #FFFFFF with your desired color -->
 </shape>

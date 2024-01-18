@@ -4,53 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2"
+    tools:context=".MainActivity"
     android:id="@+id/layout">
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/viewcard"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        app:cardBackgroundColor="#2F22A1"
-        android:overScrollMode="never"
-        android:layout_alignParentTop="true"
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="New year, new you!"
-            android:textSize="29sp"
-            android:textColor="@color/white"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="10dp"/>
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="30dp"
-            android:src="@drawable/fireworks"
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="280dp"
-            />
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/period"
-            android:layout_marginLeft="-5dp"
-            />
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/period"
-            android:layout_marginLeft="-5dp"
-            android:layout_marginTop="15dp"
-            />
-    </androidx.cardview.widget.CardView>
 
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#E8E8E8"
-        android:layout_below="@+id/viewcard">
+        android:background="#E8E8E8">
 
 
         <LinearLayout
@@ -65,7 +26,36 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/viewcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    app:cardBackgroundColor="#2F22A1"
+                    android:overScrollMode="never"
+                    android:layout_alignParentTop="true"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Welcome, Alphis"
+                        android:textSize="29sp"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"/>
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/period"
+                        android:layout_marginLeft="-5dp"
+                        />
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/period"
+                        android:layout_marginLeft="-5dp"
+                        android:layout_marginTop="15dp"
+                        />
+                </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardniew_001"
@@ -622,6 +612,7 @@
 
 
                     <Button
+                        android:id="@+id/btn001"
                         android:layout_width="100dp"
                         android:layout_height="50dp"
                         android:layout_marginTop="20dp"
@@ -655,6 +646,7 @@
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_bar"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="@color/white"
@@ -665,8 +657,101 @@
         app:itemRippleColor="@color/purple_200"
         app:labelVisibilityMode="unlabeled"
         app:menu="@menu/bottomnav_bar"
-        />
+        >
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="40dp"
+            android:text="Home"
+            android:textSize="15sp"
+            android:textColor="@color/purple_500"
+            android:layout_marginLeft="25dp"
 
+            />
+        <TextView
+            android:layout_width="64dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="40dp"
+            android:text="Accounts"
+            android:textSize="15sp"
+            android:textColor="@color/purple_500"
+            android:layout_marginLeft="99dp"
 
+            />
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="40dp"
+            android:text="Pay"
+            android:textSize="15sp"
+            android:textColor="@color/purple_500"
+            android:layout_marginLeft="199dp"
+
+            />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="40dp"
+            android:text="Cards"
+            android:textSize="15sp"
+            android:textColor="@color/purple_500"
+            android:layout_marginLeft="270dp"
+
+            />
+
+        <TextView
+            android:layout_width="55dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="40dp"
+            android:text="Settings"
+            android:textSize="15sp"
+            android:textColor="@color/purple_500"
+            android:layout_marginLeft="350dp"
+
+            />
+        <ImageView
+            android:id="@+id/homesection"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/colon"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <ImageView
+            android:id="@+id/accountsection"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/equal"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="110dp"
+            />
+        <ImageView
+            android:id="@+id/coinsection"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/coin"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="199dp"
+            />
+        <ImageView
+            android:id="@+id/cardsection"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:src="@drawable/card"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="270dp"
+            />
+
+        <ImageView
+            android:id="@+id/usersection"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:src="@drawable/users"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="350dp"
+            />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 </RelativeLayout>

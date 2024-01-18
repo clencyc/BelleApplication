@@ -7,12 +7,17 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:912417708057:android:13cee769b884e3b717f288",
+        "mobilesdk_app_id": "1:912417708057:android:4416ac3e9b3410f017f288",
         "android_client_info": {
-          "package_name": "com.example.belle_app1"
+          "package_name": "com.example.BelleApplication"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "912417708057-k60dmknb3qnq12gsu7nfmmpa0g6jq00a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyBG890M6CMvLSyXjVksFmeMtcVQZRlEmHM"
@@ -20,7 +25,41 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "912417708057-k60dmknb3qnq12gsu7nfmmpa0g6jq00a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:912417708057:android:13cee769b884e3b717f288",
+        "android_client_info": {
+          "package_name": "com.example.belle_app1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "912417708057-k60dmknb3qnq12gsu7nfmmpa0g6jq00a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBG890M6CMvLSyXjVksFmeMtcVQZRlEmHM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "912417708057-k60dmknb3qnq12gsu7nfmmpa0g6jq00a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
